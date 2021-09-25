@@ -6,27 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
     <title>Thrift Bookstore</title>
 </head>
 
 <body>
-    <nav class="navbar background">
-        <ul class="nav-list">
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
             <div class="logo"><img src="img/a.png" alt="logo"> </div>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#books">Books</a></li>
             <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
-        <div class="rightnav">
+        <div class="rightNav v-class-resp">
             <input type="text" name="search" id="search">
             <button class="btn btn-sm">Search</button>
         </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
 
+        </div>
 
     </nav>
     <section class="background firstSection">
-        <div class="box-main">
+        <div class="box-main" id="books">
             <div class="firstHalf">
                 <p class="text-big">The future of books is here.</p>
                 <p class="text-small">lalalala. ifjjfif ijf refjioe ufhrleijfi;erjf rfj;rioerjfieorfio;e ijroojfw;ofjr
@@ -37,18 +44,66 @@
                 </div>
             </div>
             <div class="secondHalf">
-                <img src="img/a.png" alt="img" >
+                <img src="img/a.png" alt="img">
             </div>
         </div>
     </section>
-    <section class="secRight">
-        <p class="sectionTag">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus atque do
-        </p>
-        <p class="sectionSubTag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum soluta nulla eius dolorum corporis, provident dignissimos ad? Vero, sequi unde
-        </p>
-        <div class="thumbnail"></div>
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus atque do
+            </p>
+            <p class="sectionSubTag text-small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum solutanulla eiusdolorum corporis,
+                provident dignissimos ad? Vero, sequi undeconsectetur adipisicing elit. Ipsum solutanulla eiusdolorum
+                corporis, provident dignissimos ad? Vero, sequi unde
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/1600x900/?books,library" alt="image" class="imgFluid" height="200px">
+        </div>
     </section>
-    
+    <hr>
+    <section class="section section-left">
+        <div class="paras">
+            <p class="sectionTag text-big">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus atque do
+            </p>
+            <p class="sectionSubTag text-small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum solutanulla eiusdolorum corporis,
+                provident dignissimos ad? Vero, sequi undeconsectetur adipisicing elit. Ipsum solutanulla eiusdolorum
+                corporis, provident dignissimos ad? Vero, sequi unde
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/1600x900/?recycle,code" alt="image" class="imgFluid" height="200px">
+        </div>
+    </section>
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus atque do
+            </p>
+            <p class="sectionSubTag text-small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum solutanulla eiusdolorum corporis,
+                provident dignissimos ad? Vero, sequi undeconsectetur adipisicing elit. Ipsum solutanulla eiusdolorum
+                corporis, provident dignissimos ad? Vero, sequi unde
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="img/b.jpg" alt="image" class="imgFluid" height="200px">
+        </div>
+    </section>
+    <section class="contact">
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+    <footer class="background" id="about">
+        <p class="text-footer">
+            CopyRight &copy; 2021 -www.ThriftBookstore.com -All Rights Reserved
+        </p>
+    </footer>
+    <script src="js/resp.js"></script>
+
 </body>
 
 </html>
