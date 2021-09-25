@@ -18,7 +18,7 @@
     <nav class="navbar h-nav-resp">
         <ul class="nav-list v-class-resp">
             <div class="logo">
-                <img src="img/a.png" alt="logo"> 
+                <img src="img/logo.png" alt="logo"> 
                 <div class="txt">Thrift Bookstore</div>
             </div>
             <li><a href="#home">Home</a></li>
@@ -27,8 +27,8 @@
             <li><a href="#about">About</a></li>
         </ul>
         <div class="rightNav v-class-resp">
-            <button class="btn btn-sm">Log in</button>
-            <button class="btn btn-sm">Register</button>
+            <button class="btn btn-sm" onclick="window.location.href='login.php';">Log in</button>
+            <button class="btn btn-sm" onclick="window.location.href='register.php';">Register</button>
         </div>
         <div class="burger">
             <div class="line"></div>
@@ -47,7 +47,7 @@
                
             </div>
             <div class="secondHalf">
-                <img src="img/pngegg (7).png" alt="img">
+                <img src="img/book.png" alt="img">
             </div>
         </div>
     </section>
@@ -68,7 +68,7 @@
     <hr>
     <section class="section section-left">
         <div class="paras">
-            <p class="sectionTag text-big">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus atque do
+            <p class="sectionTag text-big">Lorem ipsum , sit amet consectetur adipisicing elit. Natus atque do
             </p>
             <p class="sectionSubTag text-small">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum solutanulla eiusdolorum corporis,
