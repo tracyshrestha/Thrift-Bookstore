@@ -19,7 +19,7 @@
         <ul class="nav-list v-class-resp">
             <div class="logo">
                 <img src="img/logo.png" alt="logo"> 
-                <div class="txt">Thrift Bookstore</div>
+                <div class="webname">Thrift Bookstore</div>
             </div>
             <li><a href="#home">Home</a></li>
             <li><a href="#books">Books</a></li>
