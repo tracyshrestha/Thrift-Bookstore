@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.55) url("../img/b9.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+
+.container {
+  width: 500px;
+    height: 477px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+    padding: 16px 30px;
+}
+
+.container .sellbook-text {
+  color: rgb(61, 1, 48);
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+  text-transform: capitalize;
+}
+
+.container .sellbook-social {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  margin-bottom: 25px;
+}
+
+
+.container .sellbook .input-group {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 5px;
+
+ 
+}
+
+.container .sellbook .input-group input {
+  width: 200px;
+  height: 70%;
+  border: 2px solid #e7e7e7;
+  padding: 15px 20px;
+  margin: -16px 8px;
+  font-size: 1rem;
+  /* border-radius: 30px; */
+  background: transparent;
+  outline: none;
+  transition: 0.3s;
+  
+ 
+  
+}
+.container .sellbook .img file{
+  width: 200px;
+  height: 90%;
+  margin: 5px 5px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  /* border-radius: 30px; */
+  background: tsellbook
+  outline: none;
+  transition: 0.3s;
+
+}
+
+.container .sellbook .input-group input:focus,
+.container .sellbook .input-group input:valid {
+  border-color: #c886ff;
+}
+
+.container .buttons .btn {
+    /* display: block; */
+    width: 190px;
+    height: 44px;
+    padding: 7px 20px;
+    margin: 30px 13px;
+    text-align: center;
+    border: none;
+    background: #2d1530;
+    outline: none;
+    /* border-radius: 30px; */
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.container .sellbook .buttons .btn:hover {
+  transform: translateY(-5px);
+  background: #e598f8;
+}
+
+
+@media (max-width: 430px) {
+  .container {
+    width: 300px;
+  }
+  .container .login-social {
+    display: block;
+  }
+  .container .login-social a {
+    display: block;
+  }
+}

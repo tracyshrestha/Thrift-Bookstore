@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
 
 	<link rel="stylesheet" type="text/css" href="css/loginRegister.css">
 
-	<title>Register Form - Pure Coding</title>
+	<title>Register Form</title>
 </head>
 <body>
 	<button class="home"> <a href="./index.php">  Home </a></button>
