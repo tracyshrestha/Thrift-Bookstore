@@ -51,6 +51,293 @@
             </div>
         </div>
     </section>
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus atque do
+            </p>
+            <p class="sectionSubTag text-small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum solutanulla eiusdolorum corporis,
+                provident dignissimos ad? Vero, sequi undeconsectetur adipisicing elit. Ipsum solutanulla eiusdolorum
+                corporis, provident dignissimos ad? Vero, sequi unde
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="img/b.jpg" alt="image" class="imgFluid" height="200px">
+        </div>
+    </section>
+    <section class="contact">
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+    <section class="bag">
+        <div class="bookcover">
+            <div class="sbook">
+                <div class="bookc">
+                    <img src="img/b9.jpg" alt="logo">
+
+                </div>
+
+                <div class="rightside txt">
+
+                    <div class="title">
+                        <b>
+                            Title</b>
+                    </div>
+                    <div class="price">
+                        <p>Price </p>
+                    </div>
+
+                    <div class="author">
+                        <p>Author </p>
+                    </div>
+                    <div class="seller">
+                        <p>Seller </p>
+                    </div>
+
+                    <div class="phonenum">
+                        <p>Contact </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+     
+        <div class="bookcover">
+            <div class="sbook">
+                <div class="bookc">
+                    <img src="img/b9.jpg" alt="logo">
+
+                </div>
+
+                <div class="rightside txt">
+
+                    <div class="title">
+                        <b>
+                            Title</b>
+                    </div>
+                    <div class="price">
+                        <p>Price </p>
+                    </div>
+
+                    <div class="author">
+                        <p>Author </p>
+                    </div>
+                    <div class="seller">
+                        <p>Seller </p>
+                    </div>
+
+                    <div class="phonenum">
+                        <p>Contact </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+     
+        <div class="bookcover">
+            <div class="sbook">
+                <div class="bookc">
+                    <img src="img/b9.jpg" alt="logo">
+
+                </div>
+
+                <div class="rightside txt">
+
+                    <div class="title">
+                        <b>
+                            Title</b>
+                    </div>
+                    <div class="price">
+                        <p>Price </p>
+                    </div>
+
+                    <div class="author">
+                        <p>Author </p>
+                    </div>
+                    <div class="seller">
+                        <p>Seller </p>
+                    </div>
+
+                    <div class="phonenum">
+                        <p>Contact </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+     
+        <div class="bookcover">
+            <div class="sbook">
+                <div class="bookc">
+                    <img src="img/b9.jpg" alt="logo">
+
+                </div>
+
+                <div class="rightside txt">
+
+                    <div class="title">
+                        <b>
+                            Title</b>
+                    </div>
+                    <div class="price">
+                        <p>Price </p>
+                    </div>
+
+                    <div class="author">
+                        <p>Author </p>
+                    </div>
+                    <div class="seller">
+                        <p>Seller </p>
+                    </div>
+
+                    <div class="phonenum">
+                        <p>Contact </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+     
+        <div class="bookcover">
+            <div class="sbook">
+                <div class="bookc">
+                    <img src="img/b9.jpg" alt="logo">
+
+                </div>
+
+                <div class="rightside txt">
+
+                    <div class="title">
+                        <b>
+                            Title</b>
+                    </div>
+                    <div class="price">
+                        <p>Price </p>
+                    </div>
+
+                    <div class="author">
+                        <p>Author </p>
+                    </div>
+                    <div class="seller">
+                        <p>Seller </p>
+                    </div>
+
+                    <div class="phonenum">
+                        <p>Contact </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+     
+        <div class="bookcover">
+            <div class="sbook">
+                <div class="bookc">
+                    <img src="img/b9.jpg" alt="logo">
+
+                </div>
+
+                <div class="rightside txt">
+
+                    <div class="title">
+                        <b>
+                            Title</b>
+                    </div>
+                    <div class="price">
+                        <p>Price </p>
+                    </div>
+
+                    <div class="author">
+                        <p>Author </p>
+                    </div>
+                    <div class="seller">
+                        <p>Seller </p>
+                    </div>
+
+                    <div class="phonenum">
+                        <p>Contact </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+     
+        <div class="bookcover">
+            <div class="sbook">
+                <div class="bookc">
+                    <img src="img/b9.jpg" alt="logo">
+
+                </div>
+
+                <div class="rightside txt">
+
+                    <div class="title">
+                        <b>
+                            Title</b>
+                    </div>
+                    <div class="price">
+                        <p>Price </p>
+                    </div>
+
+                    <div class="author">
+                        <p>Author </p>
+                    </div>
+                    <div class="seller">
+                        <p>Seller </p>
+                    </div>
+
+                    <div class="phonenum">
+                        <p>Contact </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+     
+        <div class="bookcover">
+            <div class="sbook">
+                <div class="bookc">
+                    <img src="img/b9.jpg" alt="logo">
+
+                </div>
+
+                <div class="rightside txt">
+
+                    <div class="title">
+                        <b>
+                            Title</b>
+                    </div>
+                    <div class="price">
+                        <p>Price </p>
+                    </div>
+
+                    <div class="author">
+                        <p>Author </p>
+                    </div>
+                    <div class="seller">
+                        <p>Seller </p>
+                    </div>
+
+                    <div class="phonenum">
+                        <p>Contact </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+     
+
+    </section>
     <section class="section" id="books">
         <div class="paras">
             <p class="sectionTag text-big">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus atque do
@@ -80,26 +367,7 @@
             <img src="https://source.unsplash.com/1600x900/?recycle,code" alt="image" class="imgFluid" height="200px">
         </div>
     </section>
-    <section class="section">
-        <div class="paras">
-            <p class="sectionTag text-big">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus atque do
-            </p>
-            <p class="sectionSubTag text-small">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum solutanulla eiusdolorum corporis,
-                provident dignissimos ad? Vero, sequi undeconsectetur adipisicing elit. Ipsum solutanulla eiusdolorum
-                corporis, provident dignissimos ad? Vero, sequi unde
-            </p>
-        </div>
-        <div class="thumbnail">
-            <img src="img/b.jpg" alt="image" class="imgFluid" height="200px">
-        </div>
-    </section>
-    <section class="contact">
-        <br>
-        <br>
-        <br>
-        <br>
-    </section>
+
     <footer class="foott" id="about">
         <p class="text-footer">
             CopyRight &copy; 2021 -www.ThriftBookstore.com -All Rights Reserved
