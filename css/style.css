@@ -127,6 +127,56 @@ html {
   margin: auto;
   padding: 10px;
 }
+.bag{
+
+}
+.bookcover {
+      width: 20%;;
+      display: inline-block;
+      box-shadow: 2px 2px 20px black;
+      border-radius: 5px;
+      margin: 2%;   
+      
+}
+.sbook {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 190px;
+  justify-content: center;
+  top: 0;
+ 
+  background-color: rgb(246, 181, 255);
+}
+.bookc {
+  width: 50%;
+  height: 290px;
+  padding: 0 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bookc img {
+  width: 100%;
+  
+
+}
+.rightside {
+  width: 50%;
+  padding: 4px 11px;
+  text-align: left;
+}
+.txt {
+  line-height: 20px;
+  font-size: 15px;
+  font-family: "Pacifico", cursive;
+}
+.title {
+
+  font-size: 20px;
+
+}
+
 .section-left {
   flex-direction: row-reverse;
 }
