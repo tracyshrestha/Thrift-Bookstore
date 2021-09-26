@@ -50,7 +50,6 @@ html {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 20px;
-  font-family: "Poppins", sans-serif;
 }
 
 .nav-list li a:hover {
@@ -76,7 +75,6 @@ html {
   justify-content: center;
   align-items: center;
   color: aliceblue;
-  font-family: "Poppins", sans-serif;
   max-width: 50%;
   margin: auto;
   height: 80%;
@@ -127,7 +125,6 @@ html {
   justify-content: space-evenly;
   max-width: 100%;
   margin: auto;
-  font-family: "Poppins", sans-serif;
   padding: 10px;
 }
 .section-left {
