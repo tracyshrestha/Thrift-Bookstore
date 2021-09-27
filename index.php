@@ -57,23 +57,6 @@ session_start();
 
     </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section class="background firstSection" id="home">
         <div class="box-main">
             <div class="firstHalf">
@@ -89,10 +72,6 @@ session_start();
             </div>
         </div>
     </section>
-
-
- 
-    
 
 <section class="mainbox">
 
