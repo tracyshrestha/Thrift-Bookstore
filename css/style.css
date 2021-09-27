@@ -123,6 +123,7 @@ html {
 .mainbox {
   border: 10px solid black;
   background:  url("../img/bookimgg.jpg")
+  
   /* background-color: rgb(191, 157, 223); */
 
 }
@@ -159,9 +160,11 @@ html {
   padding-top: 10px;
 }
 /* cardend */
+
 .section {
   /* background-color: rgb(48, 0, 54); */
   background:  url("../img/galaxy.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;

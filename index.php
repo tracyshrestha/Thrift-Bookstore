@@ -156,6 +156,7 @@ session_start();
 
    </div>
 
+
         <section class="section">
         <div class="paras">
             <b class="sectionTag text-big">More About Thrift Bookstore
@@ -185,7 +186,7 @@ almost half of its original price.
 
         </section>
         
-   
+
     <footer class="foott" id="about"> 
         
         <p class="text-footer">
