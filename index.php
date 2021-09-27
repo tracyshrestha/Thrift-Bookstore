@@ -11,7 +11,7 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/responsive.css">
 
     <title>Thrift Bookstore</title>
@@ -28,14 +28,25 @@ session_start();
                 <div class="webname">Thrift Bookstore</div>
             </div>
             <li><a href="#home">Home</a></li>
-            <li><a href="books.html">Books</a></li>
+            <li><a href="books.php">Books</a></li>
             <li><a href="#contactus">Contact Us</a></li>
             <li><a href="#about">About</a></li>
         </ul>
-        <div class="rightNav v-class-resp">
-            <button class="btn btn-sm" onclick="window.location.href='login.php';">Log in</button>
-            <button class="btn btn-sm" onclick="window.location.href='register.php';">Register</button>
-        </div>
+
+        <?php
+               if(isset($_SESSION['username'])){
+                     echo ' <div class="rightNav"> <a href="logout.php">  Logout </a></div>
+                     ';
+            }   
+            
+            else{
+                echo ' 
+                <div class="rightNav"> <a href="login.php">  Login | </a>
+                <a href="Register.php">  Register </a> </div>
+                   ';
+                   
+            }
+            ?>
 
         <div class="burger">
             <div class="line"></div>
@@ -45,6 +56,24 @@ session_start();
         </div>
 
     </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="background firstSection" id="home">
         <div class="box-main">
             <div class="firstHalf">
@@ -62,11 +91,12 @@ session_start();
     </section>
 
 
-    <section class="bag">
-
-<h1> Latest Books <h1>
  
     
+
+<section class="mainbox">
+
+<div class="booksale"> Books Available For Sale <div>
 <?php 
           include 'db.php';
           $sql = "SELECT * FROM `bookinfo` LIMIT 4";
@@ -76,87 +106,37 @@ session_start();
             // output data of each row
             while($row = mysqli_fetch_assoc($result)) {
               echo ' 
-              <div class="bookcover">
-            <div class="sbook">
-              
-          <div class="rightside txt">
-                    <h3> Book Name: '. $row["bookname"] .'</h3>
-                    <h4>Price (Rs) : '. $row["price"] .'</h4>
-                    <h4>Author :'. $row["authorname"] .'</h4>
-                    <h4>Seller :'. $row["sellername"].'</h4>
-                    <h4>Contact: '.$row["contactnumber"] .' </h4>
-           </div>
-           </div>
-            </div>';
+
+
+      <div class="card">
+         <div class="bookname">
+            <h3> BookName : '. $row["bookname"] .' </h3>
+         </div>
+         <div class="authorname bookinformation">
+            <p>Author Name: '. $row["authorname"] .' </p>
+         </div>
+         <div class="price bookinformation">
+            <p>Price: '. $row["price"] .'</p>
+         </div>
+         <div class="sellername bookinformation">
+            <p>Seller Name: '. $row["sellername"] .'</p>
+         </div>
+         <div class="contactno bookinformation">
+            <p>Contact Number: '. $row["contactnumber"] .'</p>
+         </div>
+      </div>';
             }
           } else {
             echo "0 results";
           }          
           ?>
-        
-</section>
-<div class="mainbox">
 
-      <!--cards -->
-
-      <div class="card">
-
-
-         <div class="bookname">
-            <h1>
-               BookName</h1>
-         </div>
-         <div class="authorname bookinformation">
-            <p>Author Name</p>
-
-         </div>
-         <div class="price bookinformation">
-            <p>Price</p>
-
-         </div>
-         <div class="sellername bookinformation">
-            <p>Seller Name</p>
-
-         </div>
-         <div class="contactno bookinformation">
-            <p>Contact Number</p>
-
-         </div>
-
-      </div>
-
-
-      <div class="card">
-
-
-         <div class="bookname">
-            <h1>
-               BookName</h1>
-         </div>
-         <div class="authorname bookinformation">
-            <p>Author Name</p>
-
-         </div>
-         <div class="price bookinformation">
-            <p>Price</p>
-
-         </div>
-         <div class="sellername bookinformation">
-            <p>Seller Name</p>
-
-         </div>
-         <div class="contactno bookinformation">
-            <p>Contact Number</p>
-
-         </div>
-
-      </div>
+    <button class="morebooks"> <a href="./books.php">  CLick To View More Books </a></button>
+        </section>
 
 
 
-   </div>
-
-        <section class="section">
+        <section class="aboutus">
         <div class="paras">
             <b class="sectionTag text-big">More About Thrift Bookstore
         </b>

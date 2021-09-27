@@ -19,9 +19,25 @@ if (!isset($_SESSION['username'])) {
 </head>
 
 <body>
+<nav class="navbar h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+                <div class="webname">Thrift Bookstore</div>
+            </div>
+            <li><a href="index.php">Home</a></li>
+            <?php echo "<li> Welcome, " . $_SESSION['username'] . "</li>"; ?>
+   
+        </ul>
+        <div class="rightNav">
+        <a href="logout.php">Logout</a>
+        </div>
+    </nav>
+
+
     
-    <?php echo "<h1>Welcome " . $_SESSION['username'] . "</h1>"; ?>
-    <a href="logout.php">Logout</a>
+    <section class="dash">
+    
     <div class="container">
         <form action="" method="POST" class="sellbook">
             <p class="sellbook-text" style="font-size: 2rem; font-weight: 800;">Put a Book Up For Sale</p>
@@ -51,10 +67,6 @@ if (!isset($_SESSION['username'])) {
                 <input type="text" placeholder="Contact Number" name="contactnumber" value=""
                     required>
             </div>
-            <div class="img">
-                <label> Select Image</label>
-                <input type="file" multiple="false" accept="imag/*" id="image" onchange="upload()" name="bookimage">
-            </div>
             <div class="buttons">
                 <input TYPE="RESET" class="btn" NAME="resetbtn" VALUE="Reset">
                 <!-- <button name="submit" class="btn">Clear</button> -->
@@ -72,9 +84,8 @@ if (!isset($_SESSION['username'])) {
                     $authorname = mysqli_real_escape_string($conn, $_POST['authorname']);
                     $sellername = mysqli_real_escape_string($conn, $_POST['sellername']);
                     $contactnumber = mysqli_real_escape_string($conn, $_POST['contactnumber']);
-                    $bookimage = mysqli_real_escape_string($conn, $_POST['bookimage']);
 
-                    $sql = "INSERT INTO `bookinfo` (`bookname`, `price`,`authorname`,`sellername`,`contactnumber`,`bookimage` ) VALUES ('$bookname', '$price','$authorname','$sellername','$contactnumber','$bookimage' )"; 
+                    $sql = "INSERT INTO `bookinfo` (`bookname`, `price`,`authorname`,`sellername`,`contactnumber` ) VALUES ('$bookname', '$price','$authorname','$sellername','$contactnumber' )"; 
 
                     if ($conn->query($sql) === TRUE) {
                        echo " Your product has been uploaded successfully";
@@ -91,7 +102,7 @@ if (!isset($_SESSION['username'])) {
                             
                     ?>
     </div>
-
+    </section>
 </body>
 
 </html>

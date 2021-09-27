@@ -56,7 +56,19 @@ if (isset($_POST['submit'])) {
 	<title>Register Form</title>
 </head>
 <body>
-	<button class="home"> <a href="./index.php">  Home </a></button>
+	<nav class="navbar h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+                <div class="webname">Thrift Bookstore</div>
+            </div>
+            <li><a href="index.php">Home</a></li>
+            
+   
+        </ul>
+    </nav>
+
+<section class="logc">
 	<div class="container">
 		<form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
@@ -78,5 +90,7 @@ if (isset($_POST['submit'])) {
 			<p class="login-register-text">Have an account? <a href="login.php">Login Here</a>.</p>
 		</form>
 	</div>
+<section class="logc">
+
 </body>
 </html>

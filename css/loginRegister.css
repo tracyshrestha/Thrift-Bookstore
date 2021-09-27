@@ -15,36 +15,66 @@ body {
   background-blend-mode: darken;
   background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   /* display: flex;
   flex-direction: column; */
 }
-
-.home {
-  position: absolute;
+.logc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* nav start */
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 40%;
+  border-radius: 50px;
+  margin: 7px;
+}
+.webname {
+  line-height: 19px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+}
+.navbar {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  position: sticky;
   top: 0;
-  left: 0;
-  margin-top: 15px;
-  margin-left: 15px;
-  background-color: #ffffff; /* Blue background */
-  border: none; /* Remove borders */
-  padding: 14px 20px; /* Some padding */
-  font-size: 20px; /* Set a font size */
-  cursor: pointer; /* Mouse pointer on hover */
+  cursor: pointer;
+  background-color: #2d1530;
 }
-
-.home:hover {
-  background-color: #e598f8;
+.nav-list {
+  color: rgb(255, 255, 255);
+  width: 70%;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
 }
-
-.home a {
-  color: rgb(0, 0, 0);
+.nav-list li {
+  list-style: none;
+  padding: 16px 29px;
+}
+.nav-list li a {
   text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.nav-list li a:hover {
+  text-decoration: none;
+  color: rgb(229, 152, 248);
 }
 
 .container {
+  margin-top: 50px;
   width: 400px;
   min-height: 400px;
   background: #fff;
