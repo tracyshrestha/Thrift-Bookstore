@@ -128,7 +128,7 @@ html {
 }
 .mainbox :hover {
   background-color: rgb(116, 0, 106);
-  color: rgb(255, 0, 191)
+  color: rgb(241, 148, 218);
    border-radius: 5px;
   cursor: pointer;
   transform: translateY(-5px);
