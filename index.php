@@ -28,8 +28,8 @@ session_start();
                 <div class="webname">Thrift Bookstore</div>
             </div>
             <li><a href="#home">Home</a></li>
-            <li><a href="#books">Books</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
             <li><a href="#about">About</a></li>
         </ul>
         <div class="rightNav v-class-resp">
@@ -48,9 +48,11 @@ session_start();
     <section class="background firstSection" id="home">
         <div class="box-main">
             <div class="firstHalf">
-                <p class="text-big">The future of books is here.</p>
-                <p class="text-small">lalalala. ifjjfif ijf refjioe ufhrleijfi;erjf rfj;rioerjfieorfio;e ijroojfw;ofjr
-                    okerpowerojfoiewjiej jioejfiewjifoejwoieji ijriojorjeirojioew </p>
+                <b class="text-big">Thrift Books and Help Save The Environment!  </b><br>
+                <p class="text-small">  In today's world, books are an everyday necessity in an individual’s life, but not only are new books more expensive, constantly buying new books contributes towards the higher demand for the production of paper for which many trees have to be cut down, ultimately leading towards environmental degradation. <br><br>
+                Thus as Thrifting books helps in saving not only your cash but also the life of a tree and ultimately the environment, so start Thrifting Books today!
+                
+</p>
                
             </div>
             <div class="secondHalf">
@@ -60,7 +62,6 @@ session_start();
     </section>
 
 
-   
     <section class="bag">
 
 <h1> Latest Books <h1>
@@ -68,7 +69,7 @@ session_start();
     
 <?php 
           include 'db.php';
-          $sql = "SELECT * FROM `bookinfo` LIMIT 3";
+          $sql = "SELECT * FROM `bookinfo` LIMIT 4";
           $result = mysqli_query($conn, $sql);
           
           if (mysqli_num_rows($result) > 0) {
@@ -77,9 +78,7 @@ session_start();
               echo ' 
               <div class="bookcover">
             <div class="sbook">
-              <div class="bookc">
-              <img src="' . $row["bookimage"] . '" alt="Book Image">
-          </div>
+              
           <div class="rightside txt">
                     <h3> Book Name: '. $row["bookname"] .'</h3>
                     <h4>Price (Rs) : '. $row["price"] .'</h4>
@@ -96,54 +95,99 @@ session_start();
           ?>
         
 </section>
+<div class="mainbox">
+
+      <!--cards -->
+
+      <div class="card">
+
+
+         <div class="bookname">
+            <h1>
+               BookName</h1>
+         </div>
+         <div class="authorname bookinformation">
+            <p>Author Name</p>
+
+         </div>
+         <div class="price bookinformation">
+            <p>Price</p>
+
+         </div>
+         <div class="sellername bookinformation">
+            <p>Seller Name</p>
+
+         </div>
+         <div class="contactno bookinformation">
+            <p>Contact Number</p>
+
+         </div>
+
+      </div>
+
+
+      <div class="card">
+
+
+         <div class="bookname">
+            <h1>
+               BookName</h1>
+         </div>
+         <div class="authorname bookinformation">
+            <p>Author Name</p>
+
+         </div>
+         <div class="price bookinformation">
+            <p>Price</p>
+
+         </div>
+         <div class="sellername bookinformation">
+            <p>Seller Name</p>
+
+         </div>
+         <div class="contactno bookinformation">
+            <p>Contact Number</p>
+
+         </div>
+
+      </div>
+
+
+
+   </div>
 
         <section class="section">
         <div class="paras">
-            <p class="sectionTag text-big">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus atque do
-            </p>
+            <b class="sectionTag text-big">More About Thrift Bookstore
+        </b>
             <p class="sectionSubTag text-small">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum solutanulla eiusdolorum corporis,
-                provident dignissimos ad? Vero, sequi undeconsectetur adipisicing elit. Ipsum solutanulla eiusdolorum
-                corporis, provident dignissimos ad? Vero, sequi unde
+            Thrift Bookstore aims to provide the common
+people an easily accessible platform through which they can buy and sell books
+conveniently. Even though there are people who are willing to buy second hand books,
+there aren’t many places where they can easily find them. Here users can search for the books that they need and browse through the variety
+of books available on the server and get their hands on the one that interests them at
+almost half of its original price.
             </p>
         </div>
         <div class="thumbnail">
-            <img src="img/b.jpg" alt="image" class="imgFluid" height="200px">
+            <img src="img/tree.png" alt="image" class="imgFluid" height="250px">
         </div>
     </section>
+   
+    <section class="followus backcolor" id="contactus">
+   
+        <h2>Find Us On Social Media: </h2>
+             <ul class="acc">
+        <li><a href="https://www.instagram.com/">Instagram</a><li>
+        <li><a href="https://www.facebook.com">Facebook</a></li>
+        <li><a href="https://www.twitter.com/">Twitter</a></li>
+    </ul>
 
-    </section>
-    <section class="section" id="books">
-        <div class="paras">
-            <p class="sectionTag text-big">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus atque do
-            </p>
-            <p class="sectionSubTag text-small">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum solutanulla eiusdolorum corporis,
-                provident dignissimos ad? Vero, sequi undeconsectetur adipisicing elit. Ipsum solutanulla eiusdolorum
-                corporis, provident dignissimos ad? Vero, sequi unde
-            </p>
-        </div>
-        <div class="thumbnail">
-            <img src="https://source.unsplash.com/1600x900/?books,library" alt="image" class="imgFluid" height="200px">
-        </div>
-    </section>
-    <hr>
-    <section class="section section-left">
-        <div class="paras">
-            <p class="sectionTag text-big">Lorem ipsum , sit amet consectetur adipisicing elit. Natus atque do
-            </p>
-            <p class="sectionSubTag text-small">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum solutanulla eiusdolorum corporis,
-                provident dignissimos ad? Vero, sequi undeconsectetur adipisicing elit. Ipsum solutanulla eiusdolorum
-                corporis, provident dignissimos ad? Vero, sequi unde
-            </p>
-        </div>
-        <div class="thumbnail">
-            <img src="https://source.unsplash.com/1600x900/?recycle,code" alt="image" class="imgFluid" height="200px">
-        </div>
-    </section>
-
-    <footer class="foott" id="about">
+        </section>
+        
+   
+    <footer class="foott" id="about"> 
+        
         <p class="text-footer">
             CopyRight &copy; 2021 -www.ThriftBookstore.com -All Rights Reserved
         </p>
