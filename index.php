@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,6 +36,7 @@
             <button class="btn btn-sm" onclick="window.location.href='login.php';">Log in</button>
             <button class="btn btn-sm" onclick="window.location.href='register.php';">Register</button>
         </div>
+
         <div class="burger">
             <div class="line"></div>
             <div class="line"></div>
@@ -51,7 +58,46 @@
             </div>
         </div>
     </section>
-    <section class="section">
+
+
+   
+    <section class="bag">
+
+<h1> Latest Books <h1>
+ 
+    
+<?php 
+          include 'db.php';
+          $sql = "SELECT * FROM `bookinfo` LIMIT 3";
+          $result = mysqli_query($conn, $sql);
+          
+          if (mysqli_num_rows($result) > 0) {
+            // output data of each row
+            while($row = mysqli_fetch_assoc($result)) {
+              echo ' 
+              <div class="bookcover">
+            <div class="sbook">
+              <div class="bookc">
+              <img src="' . $row["bookimage"] . '" alt="Book Image">
+          </div>
+          <div class="rightside txt">
+                    <h3> Book Name: '. $row["bookname"] .'</h3>
+                    <h4>Price (Rs) : '. $row["price"] .'</h4>
+                    <h4>Author :'. $row["authorname"] .'</h4>
+                    <h4>Seller :'. $row["sellername"].'</h4>
+                    <h4>Contact: '.$row["contactnumber"] .' </h4>
+           </div>
+           </div>
+            </div>';
+            }
+          } else {
+            echo "0 results";
+          }          
+          ?>
+        
+</section>
+
+        <section class="section">
         <div class="paras">
             <p class="sectionTag text-big">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus atque do
             </p>
@@ -65,277 +111,6 @@
             <img src="img/b.jpg" alt="image" class="imgFluid" height="200px">
         </div>
     </section>
-    <section class="contact">
-        <br>
-        <br>
-        <br>
-        <br>
-    </section>
-    <section class="bag">
-        <div class="bookcover">
-            <div class="sbook">
-                <div class="bookc">
-                    <img src="img/b9.jpg" alt="logo">
-
-                </div>
-
-                <div class="rightside txt">
-
-                    <div class="title">
-                        <b>
-                            Title</b>
-                    </div>
-                    <div class="price">
-                        <p>Price </p>
-                    </div>
-
-                    <div class="author">
-                        <p>Author </p>
-                    </div>
-                    <div class="seller">
-                        <p>Seller </p>
-                    </div>
-
-                    <div class="phonenum">
-                        <p>Contact </p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-     
-        <div class="bookcover">
-            <div class="sbook">
-                <div class="bookc">
-                    <img src="img/b9.jpg" alt="logo">
-
-                </div>
-
-                <div class="rightside txt">
-
-                    <div class="title">
-                        <b>
-                            Title</b>
-                    </div>
-                    <div class="price">
-                        <p>Price </p>
-                    </div>
-
-                    <div class="author">
-                        <p>Author </p>
-                    </div>
-                    <div class="seller">
-                        <p>Seller </p>
-                    </div>
-
-                    <div class="phonenum">
-                        <p>Contact </p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-     
-        <div class="bookcover">
-            <div class="sbook">
-                <div class="bookc">
-                    <img src="img/b9.jpg" alt="logo">
-
-                </div>
-
-                <div class="rightside txt">
-
-                    <div class="title">
-                        <b>
-                            Title</b>
-                    </div>
-                    <div class="price">
-                        <p>Price </p>
-                    </div>
-
-                    <div class="author">
-                        <p>Author </p>
-                    </div>
-                    <div class="seller">
-                        <p>Seller </p>
-                    </div>
-
-                    <div class="phonenum">
-                        <p>Contact </p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-     
-        <div class="bookcover">
-            <div class="sbook">
-                <div class="bookc">
-                    <img src="img/b9.jpg" alt="logo">
-
-                </div>
-
-                <div class="rightside txt">
-
-                    <div class="title">
-                        <b>
-                            Title</b>
-                    </div>
-                    <div class="price">
-                        <p>Price </p>
-                    </div>
-
-                    <div class="author">
-                        <p>Author </p>
-                    </div>
-                    <div class="seller">
-                        <p>Seller </p>
-                    </div>
-
-                    <div class="phonenum">
-                        <p>Contact </p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-     
-        <div class="bookcover">
-            <div class="sbook">
-                <div class="bookc">
-                    <img src="img/b9.jpg" alt="logo">
-
-                </div>
-
-                <div class="rightside txt">
-
-                    <div class="title">
-                        <b>
-                            Title</b>
-                    </div>
-                    <div class="price">
-                        <p>Price </p>
-                    </div>
-
-                    <div class="author">
-                        <p>Author </p>
-                    </div>
-                    <div class="seller">
-                        <p>Seller </p>
-                    </div>
-
-                    <div class="phonenum">
-                        <p>Contact </p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-     
-        <div class="bookcover">
-            <div class="sbook">
-                <div class="bookc">
-                    <img src="img/b9.jpg" alt="logo">
-
-                </div>
-
-                <div class="rightside txt">
-
-                    <div class="title">
-                        <b>
-                            Title</b>
-                    </div>
-                    <div class="price">
-                        <p>Price </p>
-                    </div>
-
-                    <div class="author">
-                        <p>Author </p>
-                    </div>
-                    <div class="seller">
-                        <p>Seller </p>
-                    </div>
-
-                    <div class="phonenum">
-                        <p>Contact </p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-     
-        <div class="bookcover">
-            <div class="sbook">
-                <div class="bookc">
-                    <img src="img/b9.jpg" alt="logo">
-
-                </div>
-
-                <div class="rightside txt">
-
-                    <div class="title">
-                        <b>
-                            Title</b>
-                    </div>
-                    <div class="price">
-                        <p>Price </p>
-                    </div>
-
-                    <div class="author">
-                        <p>Author </p>
-                    </div>
-                    <div class="seller">
-                        <p>Seller </p>
-                    </div>
-
-                    <div class="phonenum">
-                        <p>Contact </p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-     
-        <div class="bookcover">
-            <div class="sbook">
-                <div class="bookc">
-                    <img src="img/b9.jpg" alt="logo">
-
-                </div>
-
-                <div class="rightside txt">
-
-                    <div class="title">
-                        <b>
-                            Title</b>
-                    </div>
-                    <div class="price">
-                        <p>Price </p>
-                    </div>
-
-                    <div class="author">
-                        <p>Author </p>
-                    </div>
-                    <div class="seller">
-                        <p>Seller </p>
-                    </div>
-
-                    <div class="phonenum">
-                        <p>Contact </p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-     
 
     </section>
     <section class="section" id="books">

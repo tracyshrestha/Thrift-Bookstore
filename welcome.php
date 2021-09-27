@@ -53,10 +53,10 @@ if (!isset($_SESSION['username'])) {
             </div>
             <div class="img">
                 <label> Select Image</label>
-                <input type="file" multiple="false" accept="image/*" id="image" onchange="upload()" name="bookimage">
+                <input type="file" multiple="false" accept="imag/*" id="image" onchange="upload()" name="bookimage">
             </div>
             <div class="buttons">
-                <INPUT TYPE="RESET" class="btn" NAME="resetbtn" VALUE="Reset">
+                <input TYPE="RESET" class="btn" NAME="resetbtn" VALUE="Reset">
                 <!-- <button name="submit" class="btn">Clear</button> -->
                 <button name="submit" class="btn">Post</button>
             </div>
